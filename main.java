@@ -37,12 +37,8 @@ public class Main extends JFrame
         container.add(label2);
         label1.setSize(50,50);
                 label1.setText("");
-
-
+                
     }
-
-
-
     public static void main(String[] args)
     {
         JFrame.setDefaultLookAndFeelDecorated(true);
