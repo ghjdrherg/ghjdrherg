@@ -32,7 +32,7 @@ public class Main extends JFrame
 
 
 
-         JLabel label2 = new JLabel("Введите число, которое вы бы хотели возвести в степень:",CENTER)
+         JLabel label2 = new JLabel("Введите число, которое вы бы"/n" хотели возвести в степень:",CENTER)
         JFrame frame = new JFrame("Calculator");
 
         frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -42,15 +42,19 @@ public class Main extends JFrame
 
         Container container = getContentPane();
         container.setLayout(new GridLayout(3,2,2,2));
-       .add(label2);
-        container.locate(5,10);
+       container.add(label2);
+      
+
+
+        
         
         
         
 
 
 
-    }
+   
+   }
     public static void main(String[] args)
     {
         JFrame.setDefaultLookAndFeelDecorated(true);
