@@ -3,6 +3,7 @@
 //this. from line 37 Because 
 //idk why i kept. this. in there line. 
 //put the constructor JLabel into the code in front of Jlabel object
+//plus, some working with components. (Containercomponents) 
 import java.awt.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
@@ -29,6 +30,8 @@ public class Main extends JFrame
         }
         JLabel label1 = new JLabel("Result");
 
+
+
          JLabel label2 = new JLabel("Введите число, которое вы бы хотели возвести в степень:",CENTER)
         JFrame frame = new JFrame("Calculator");
 
@@ -39,6 +42,8 @@ public class Main extends JFrame
 
         Container container = getContentPane();
         container.setLayout(new GridLayout(3,2,2,2));
+       .add(label2);
+        container.locate(5,10);
         
         
         
