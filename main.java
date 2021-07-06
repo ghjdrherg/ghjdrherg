@@ -1,4 +1,8 @@
 //👋 Hi, I’m @ghjdrherg
+// Hi, Its ver. 1.1 of calculator. I removed the constr. Calling argument
+//this. from line 37 Because 
+//idk why i kept. this. in there line. 
+//put the constructor JLabel into the code in front of Jlabel object
 import java.awt.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
@@ -15,7 +19,7 @@ public class Main extends JFrame
     {
          class InputData{
             public void InputData(){
-                System.out.println("Введите число, которое вы бы хотели возвести в степень:");
+                System.out.println(");
                 Scanner scanner = new Scanner(System.in);
                 int a = scanner.nextInt();
                 System.out.println("Введите степень:");
@@ -24,7 +28,8 @@ public class Main extends JFrame
             }
         }
         JLabel label1 = new JLabel("Result");
-         JLabel label2 = new JLabel("Введите число, которое вы бы\n хотели возвести в степень:");
+
+         JLabel label2 = new JLabel("Введите число, которое вы бы хотели возвести в степень:",CENTER)
         JFrame frame = new JFrame("Calculator");
 
         frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -32,12 +37,14 @@ public class Main extends JFrame
         frame.setVisible(true);
         frame.pack();
 
-        Container container = this.getContentPane();
+        Container container = getContentPane();
         container.setLayout(new GridLayout(3,2,2,2));
-        container.add(label2);
-        label1.setSize(50,50);
-                label1.setText("");
-                
+        
+        
+        
+
+
+
     }
     public static void main(String[] args)
     {
